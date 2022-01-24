@@ -18,5 +18,3 @@ Note that most code is written badly (no comments, barely any whitelines, bad re
 + Launch the selfbot:
   * Windows: Run run.bat as administrator
   * MacOS/Ubuntu/Linux: run `python3.8 main.py` in the selfbots directory
-
-+ Website: https://geazersb.github.io
