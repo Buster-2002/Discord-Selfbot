@@ -1,0 +1,49 @@
+:ok_hand:   :smile:
+         :shirt: 8=:punch:=D
+         :jeans:
+        :mans_shoe::mans_shoe:
+%
+:ok_hand:   :smiley:
+         :shirt: 8==:punch:D
+         :jeans:
+        :mans_shoe::mans_shoe:
+%
+:raised_back_of_hand:   :grimacing:
+         :shirt: 8=:punch:=D
+         :jeans:
+        :mans_shoe::mans_shoe:
+%
+:ok_hand:   :persevere:
+         :shirt: 8==:punch:D
+         :jeans:
+        :mans_shoe::mans_shoe:
+%
+:ok_hand:   :confounded:
+         :shirt: 8=:punch:=D
+         :jeans:
+        :mans_shoe::mans_shoe:
+%
+:raised_back_of_hand:   :tired_face:
+         :shirt: 8==:punch:D
+         :jeans:
+        :mans_shoe::mans_shoe:
+%
+:ok_hand:   :weary:
+         :shirt: 8=:punch:=D :sweat_drops:
+         :jeans:
+        :mans_shoe::mans_shoe:
+%
+:ok_hand:   :dizzy_face:
+         :shirt: 8==:punch:D :sweat_drops:
+         :jeans:                          :sweat_drops:
+        :mans_shoe::mans_shoe:
+%
+:fist:   :drooling_face:
+         :shirt: 8==:punch:D
+         :jeans:                          :sweat_drops:
+        :mans_shoe::mans_shoe:                          :sweat_drops:
+%
+:fist:   :drooling_face:
+         :shirt: 8==:punch:D
+         :jeans:
+        :mans_shoe::mans_shoe:                          :sweat_drops:

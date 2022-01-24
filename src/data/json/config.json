@@ -1,0 +1,100 @@
+{
+    "AUTH_TOKEN": "PLACEHOLDER",
+    "DISCORD_TOKEN": "PLACEHOLDER",
+    "LOGGING_GUILD": "PLACEHOLDER",
+    "PASSWORD": "PLACEHOLDER",
+    "PREFIXES": [
+        "PLACEHOLDER"
+    ],
+    "ERRORINFO": "PLACEHOLDER",
+    "GUILDLOG": "PLACEHOLDER",
+    "SNIPING": {
+        "nitro": {
+            "state": "PLACEHOLDER",
+            "exclusions": []
+        },
+        "privnote": {
+            "state": "PLACEHOLDER",
+            "exclusions": []
+        },
+        "token": {
+            "state": "PLACEHOLDER",
+            "exclusions": []
+        },
+        "giveaway": {
+            "state": "PLACEHOLDER",
+            "exclusions": []
+        }
+    },
+    "EMBED": {
+        "state": "PLACEHOLDER",
+        "showspeed": "PLACEHOLDER",
+        "colour": "PLACEHOLDER",
+        "footer_text": "PLACEHOLDER",
+        "footer_icon": "PLACEHOLDER",
+        "autodelete": "PLACEHOLDER"
+    },
+    "DMLOG": {
+        "state": "PLACEHOLDER",
+        "webhook_url": "PLACEHOLDER"
+    },
+    "KEYWORDLOG": {
+        "state": "PLACEHOLDER",
+        "webhook_url": "PLACEHOLDER",
+        "keywords": []
+    },
+    "RPC": {
+        "state": "PLACEHOLDER",
+        "clientid": "PLACEHOLDER",
+        "name": "PLACEHOLDER",
+        "details": "PLACEHOLDER",
+        "large_text": "PLACEHOLDER",
+        "small_text": "PLACEHOLDER",
+        "large_image": "PLACEHOLDER",
+        "small_image": "PLACEHOLDER",
+        "buttons": [
+            {
+                "label": "PLACEHOLDER",
+                "url": "PLACEHOLDER"
+            },
+            {
+                "label": "PLACEHOLDER",
+                "url": "PLACEHOLDER"
+            }
+        ]
+    },
+    "EXTENSIONS": {
+        "moderation": "PLACEHOLDER",
+        "games": "PLACEHOLDER",
+        "nsfw": "PLACEHOLDER"
+    },
+    "NOTIFICATIONS": {
+        "state": "PLACEHOLDER",
+        "webhook_url": "PLACEHOLDER"
+    },
+    "PROTECTIONS": {
+        "webhook_url": "PLACEHOLDER",
+        "warn_for_admin": "PLACEHOLDER",
+        "anti_spam_ping": {
+            "state": "PLACEHOLDER",
+            "exclude_friends": "PLACEHOLDER",
+            "calls": "PLACEHOLDER",
+            "period": "PLACEHOLDER"
+        },
+        "anti_spam_groupchat": {
+            "state": "PLACEHOLDER",
+            "calls": "PLACEHOLDER",
+            "period": "PLACEHOLDER"
+        },
+        "anti_spam_friend": {
+            "state": "PLACEHOLDER",
+            "calls": "PLACEHOLDER",
+            "period": "PLACEHOLDER"
+        },
+        "anti_spam_dm": {
+            "state": "PLACEHOLDER",
+            "calls": "PLACEHOLDER",
+            "period": "PLACEHOLDER"
+        }
+    }
+}

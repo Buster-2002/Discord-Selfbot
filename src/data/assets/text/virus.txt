@@ -1,0 +1,12 @@
+`[▓▓▓                   ] ╱ {0}.exe processing binaries.`
+`[▓▓▓▓▓▓▓               ] ―― {0}.exe installing requirements..`
+`[▓▓▓▓▓▓▓▓▓▓▓▓          ] ╲ {0}.exe expanding files...`
+`[▓▓▓▓▓▓▓▓▓▓▓▓▓▓        ] | {0}.exe assembling files.`
+`[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓     ] ╱ {0}.exe linking files..`
+`[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ] ―― {0}.exe packing files...`
+`[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] ╲ {0}.exe packing files.`
+`Successfully compiled {0}.exe`
+`Commencing inject into {1}   |`
+`Injecting.  ╱`
+`Injecting.. ――`
+`Successfully Injected {0}.exe into {1} at {2}`
