@@ -1,0 +1,663 @@
+Geazer SB Command List - Made by Buster
+Total commands: 526
+
+-----------------------------------------------------------------------------------------------------------------------------
+Info
+Category with all info commands.
+These commands return info on a specific subject.
+-----------------------------------------------------------------------------------------------------------------------------
+• idinfo <id>                           Will show information about a Discord <id>
+• movieinfo <query>                     Will return movie info and torrents by <query>
+• seriesinfo <query>                    Will return series info by <query>
+• pokemoninfo <pokemon>                 Will show information about <pokemon>
+• minecraftinfo <usernameoruuid>        Will return some information about a Minecraft account
+• inviteinfo <invite>                   Will show information about the Discord <invite>
+• steaminfo <steamid>                   Will show information about a steam account by <steam_id>
+• songinfo <song>                       Will return information about <song>
+• covidinfo                             Will return some data regarding the SARS-CoV-2 virus
+• weatherinfo <city>                    Will return weather info by <city>
+• packageinfo <package>                 Will show information about the Python <package>
+• foodinfo <dish>                       Will return some info about <dish>
+• processinfo                           Will show some process info of your selfbot instance
+• computerinfo                          Will show information about the computer the bot is running on
+• channelinfo [server] [sendtolog=True] Will show all the channels in [server]
+• roleinfo <role> [sendtolog=True]      Will show information about the <role>
+• emailinfo <email>                     Will show some information about <email>
+• serverinfo [server] [sendtolog=True]  Will show information about [server]
+• userinfo <user> [sendtolog=True]      Will show info about <user>s discord account
+• tokeninfo <token> [sendtolog=True]    Will show information about <token>
+• charinfo <message>                    Will show info about chars in your <message>
+• colourinfo [colour]                   Will show information about your hex/rgb [colour]
+• emojiinfo [server] [sendtolog=True]   Will list all the emotes in [server]
+• usageinfo                             Will show usage data and metricy
+
+-----------------------------------------------------------------------------------------------------------------------------
+Abuse
+Category with all abuse commands.
+These could potentially get you banned from servers or Discord, and should be used with caution.
+-----------------------------------------------------------------------------------------------------------------------------
+• channeloutage [amount=10] [channel]               Will send [amount] emote messages to [channel] causing the reader to lag
+• charbypass [length=1993]                          Will send a ~6000 char long random message
+• spamgc <user> [amount=10]                         Will spam create [amount] groupchats with <user>
+• massrename <server> <nickname>                    Will attempt to rename everybody to <nickname> in <server>
+• spamhelp <channel> [amount=10]                    Will spam the official help message in different languages in <channel>
+• bantoken <token>                                  Will disable a Discord token, forcing the user to reset their password
+• deleteaccount <token> <password>                  Will delete a discord account by using its <token> and <password>
+• disableaccount <token> <password>                 Will disable a Discord account by using its <token> and <password>
+• tokenspam <token> [message]                       Will randomly change settings of the target <token>
+• destroyserver [message]                           Will destroy a server by banning users, deleting and creating channels/roles
+• massban <server> [exclusions...]                  Will attempt to ban everybody in <server> excluding [exclusions...]
+• phonelock <token>                                 Will phonelock a Discord account by its <token>
+• masskick <server> [exclusions...]                 Will attempt to kick everybody in <server> excluding [exclusions...]
+• crashcall
+    ▪ stop                                          Will stop the call DOS
+    ▪ start                                         Will DOS a call in a DM or groupchat
+• channel
+    ▪ remove <amount>                               Will attempt to remove <amount> of channels in a server
+    ▪ create [amount=15] [channeltype=tc] [name]    Will spam create [amount] of [channel_type] named [name]
+• role
+    ▪ remove <amount>                               Will attempt to remove <amount> of roles in a server
+    ▪ add [amount=15] [member] [role]               Will attempt to add [amount] of roles to [member], can filter by [role]
+    ▪ create [amount=15] <name>                     Will create [amount] roles with random a colour named <name>
+• webhook
+    ▪ delete <webhookurl>                           Will delete any webhook using its <webhook_url>
+    ▪ send <message>                                Will send a message to the webhook created with webhook create
+    ▪ send2 <url> <username> <avatar> <message>     Will send <message> directly to a webhook <url>
+    ▪ create <username> <avatar> [channel]          Will create a webhook to use with webhook send
+    ▪ spam
+        ▸ start                                     Will start impersonating and spamming with a webhook in [channel]
+        ▸ stop                                      Will stop the webhook spam
+• email
+    ▪ add <gmailname> <gmailpassword>               Will add <gmail_name>:<gmail_password> to gmails.json
+    ▪ list                                          Will log amount of emails in gmails.json
+    ▪ remove <gmailname>                            Will remove <gmail_name> from gmails.json
+    ▪ spam <target> <subject> [amount=15] <message> Will spam <target> with [amount] emails containing <message>
+
+-----------------------------------------------------------------------------------------------------------------------------
+Utilities
+Category with all utility related commands.
+-----------------------------------------------------------------------------------------------------------------------------
+• addemote <link> [roles]... [server] <name>      Will create an emote <name> from <link> in [server]
+• copyserver <server> [alsocopyemotes=False]      Will create a new server copying <server>
+• news [options]                                  Will show top news or news by [options...]
+• currencyconverter [amount=1] [fromcurrency=EUR] [tocurrency=USD] Will convert [amount] [from_currency] to [to_currency]
+• dottrick <gmail>                                Will "generate" emails by putting dots in between
+• translate <targetlanguage> <text>               Will translate english <text> to <targetlanguage>
+• charcount <message>                             Will return the amount of chars, words and paragraphs in your <message>
+• hastebin <message>                              Will upload your <message> to a hastebin and send the link
+• rid <accountname>                               Will resolve R* ID connected to R* <account_name>
+• calculate <equation>                            Will solve your <equation> using Python
+• privnote [options]                              Will create a privnote with <contents> and [options...]
+• setpfp <link>                                   Will set your pfp to <link>
+• generatecreditcard [bin=visa]                   Will generate a credit card by [bin]
+• setname <name>                                  Will set your username to <name>, can be a mention or text
+• create_group [users...]                         Will create a group channel with [users...] if they are on your friendslist
+• report <message_link> <reason>                  Will report <message_link> to discord Trust & Safety
+• timer [time=600] [updateinterval=60]            Will count down from [time] and update time every [update_interval]
+• exportchat [limit=100] [channel]                Will backup the latest <limit> messages to a html/txt file
+• google <query>                                  Will search google by <query>
+• tor [page=1] <query>                            Will search the dark web with <query>
+• purge [options]                                 Will delete [amount] of messages send by you, optionally obfuscating
+• rand <num1> <num2>                              Will send a random number between <num1> and  <num2>
+• genpass [length=12]                             Will generate a [length] long password
+• loop
+    ▪ list                                        Will send the current running loops
+    ▪ clear                                       Will stop all current running loops
+    ▪ add <interval> <message>                    Will send <message> after <interval> untill stopped
+    ▪ remove <query>                              Will remove the loop by <query>
+• activity
+    ▪ streaming <streamurl> <message>             Will change your activity to Streaming <message> with link <stream_url>
+    ▪ competing <message>                         Will change your activity to Competing in <message>
+    ▪ playing <message>                           Will change your activity Playing <message>
+    ▪ watching <message>                          Will change your activity to Watching <message>
+    ▪ listening <message>                         Will change your activity to Listening to <message>
+• autodel
+    ▪ start [limit=4]                             Will autodelete messages after [limit] send
+    ▪ stop                                        Will stop autodeleting messages
+• afkmode
+    ▪ start [onlydms=False] <message>             Will reply to dms or mentions with <message>
+    ▪ stop                                        Will stop the afkmode
+• crypto
+    ▪ tocustom <coin> <amount> [currencycode=usd] Will convert <amount> <coin> to [currencycode]
+    ▪ btc [currencycode=usd]                      Will show value of 1 btc in <currencycode>
+    ▪ tobtc <amount> [currencycode=usd]           Will convert provided <amount> to it's bitcoin equivalent in <currencycode>
+    ▪ custom <coin> [currencycode=usd]            Will convert the value of 1 <coin> to [currencycode]
+• reminder
+    ▪ add <message>                               Will add a reminder with <message>
+    ▪ remove <query>                              Will remove a reminder by <query>
+    ▪ list                                        Will show all your reminders
+    ▪ clear                                       Will clear all reminders
+• todo
+    ▪ add <message>                               Will create a todo with <message>, and save it to a file
+    ▪ remove <query>                              Will remove a todo by <query>
+    ▪ list                                        Will show all your todo's
+    ▪ clear                                       Will clear all todo's
+
+-----------------------------------------------------------------------------------------------------------------------------
+Other
+Category with all commands that couldn't be placed in a distinct category.
+-----------------------------------------------------------------------------------------------------------------------------
+• eval <body>                                     Will evaluate python code
+• serverfriends [server]                          Will show your friends in [server]
+• firstmessage [channel]                          Will link to the first message send in [channel]
+• wordusage [channel] [mostcommon] [words...]     Will show how many times [words...] have been used in <channel> or show <most_common>
+• searchaccounts [workers=20] <username>          Will check if <username> exists on a multitude of social media platforms
+• move [voicechannels]... [members...]            Will move [members..] to the <voice_channels>
+• declineall                                      Will decline all incoming friend requests
+• leaveall [exclusions...]                        Will leave all groupchannels excluding [exclusions...]
+• readall                                         Will mark all messages in all servers as read
+• twitchpayouts                                   Will show gross earning of <streamer> from Twitch
+• fakeperson [sex=male] [language] [country]      Will generate a random [sex] person from [country]
+• getavatars [server]                             Will scrape all avatars in a server for the random avatars list
+• stealemotes <fromserver> <toserver> [filter...] Will scrape emojis from <fromserver> and add them to <toserver>
+• getfiles [limit=10] [server] [filetypes...]     Will scan [limit] messages for files with [filetypes...] and save them
+• cc
+    ▪ info <query>                                Will show info about a custom command by <query>
+    ▪ add [options]                               Will add the custom command named <command_name> sending <content>
+    ▪ list                                        Will show all your custom commands
+    ▪ remove <commandname>                        Will remove the custom command named <command_name>
+• serverlogs
+    ▪ edits [amount=100] [server]                 Will send the latest [amount=10]  edited messages from [server]
+    ▪ deletes [amount=100] [server]               Will send the latest [amount=10]  deleted messages from [server]
+• backup
+    ▪ make
+        ▸ friends                                 Will backup friends
+        ▸ blocked                                 Will backup blocked users
+        ▸ servers                                 Will backup joined servers
+        ▸ settings                                Will backup your Discord settings
+    ▪ load
+        ▸ friends                                 Will add previously backed up friends
+        ▸ blocked                                 Will block previously backed up users
+        ▸ servers                                 Will join previously backed up servers
+        ▸ settings                                Will load previously backed up Discord settings
+
+-----------------------------------------------------------------------------------------------------------------------------
+Fun
+Category with all fun commands.
+These are all harmless.
+-----------------------------------------------------------------------------------------------------------------------------
+• idea [options]                            Will send an idea of how to pass the time with [options...]
+• predictbyname <name>                      Will predict age/gender and country by <name>
+• snipe [channel]                           Will send the latest deleted message from <channel>
+• giveaway <emote> <item>                   Will create a giveaway from <item>
+• urban <query>                             Will define your <query> via urban dictionary
+• reddit [subreddit=memes] [amount=1]       Will send a random post from [subreddit]
+• rainbowembed <title> <description>        Will send an embed that changes colour
+• chatbot <message>                         Will allow you to talk to an AI bot
+• nitro [amount=5]                          Will generate [amount] random discord nitro codes
+• invite [amount=5] [knownbigservers=False] Will generate [amount] random or [known_big_servers] discord invite links
+• dice                                      Will send a random dice image
+• wouldyourather                            Will send a random wouldyourather dilemma
+• advice                                    Will send random advice
+• roast                                     Will send a random roast
+• quote                                     Will send a random quote
+• pickupline                                Will send a random pickupline
+• headline                                  Will send a random real or fake headline
+• fact                                      Will send a random fact
+• embed [options]                           Will allow you to specify certain embed parts
+• texttospeech [options]                    Will generate tts mp3 file saying <message>
+• react [limit=10] [emojis...]              Will react to the last <amount> messages with [emojis..]
+• lmgtfy <message>                          Will send a letmegooglethatforyou with <message>
+• virus [virusname] [destination            Will send an editing virus message
+• shutthefuckup                             Will send an editing stfu message
+• noonecares                                Will send an editing no one cares message
+• 911                                       Will send an editing 911 image
+• cum                                       Will send an editing cum image 😳
+• emojisearch [amount=1] [query]            Will send [amount] emojis, random or filtered by [query]
+• xkcd [number]                             Will send a xkcd comic
+• poll [options]                            Will create a strawpoll with possible [answers...] and [options...]
+• 8ball <question>                          Will send an 8ball response to your question
+• editnick
+    ▪ stop                                  Will stop the editnick and return to the old nickname
+    ▪ start [delay=3] [nickname]            Will loop through <nickname> revealing letters
+• cyclestatus
+    ▪ stop                                  Will stop the cyclestatus listener
+    ▪ start [delay=5] [statuses...]         Will cycle trough a list of <statuses> changing every <delay> sec
+• joke
+    ▪ dad                                   Will send a random dad joke
+    ▪ miscellaneous                         Will send a random miscellaneous joke
+    ▪ dark                                  Will send a random dark joke
+    ▪ yomama                                Will send a random yomama joke
+    ▪ christmas                             Will send a random christmas related joke
+    ▪ spooky                                Will send a random spooky joke
+    ▪ pun                                   Will send a random pun joke
+    ▪ programming                           Will send a random programming related joke
+
+-----------------------------------------------------------------------------------------------------------------------------
+Text
+Category for all text related commands.
+-----------------------------------------------------------------------------------------------------------------------------
+• colourtext <colour> <message>         Will send <message> in <colour> if available
+• summarize <text>                      Will summarize <text> using AI
+• detectmood <text>                     Will determine the mood of your <text> using AI
+• worm [options]                        Will send your <message> [amount] times in the form of a wave
+• combine <word1> <word2>               Will combine <word1> and <word2>
+• novowel <message>                     Will remove vowels from your <message>
+• superscript <message>                 Will convert your <message> to ˢᵘᵖᵉʳˢᶜʳᶦᵖᵗ
+• subscript <message>                   Will convert your <message> to ₛᵤbₛcᵣᵢₚₜ
+• replaceword <word1> <word2> <message> Will replace <word1> with <word2> in <message>
+• emojify <emote> <message>             Will emojify your <message>
+• regional <message>                    Will turn your <message> into bold letters
+• leetify <message>                     Will |€€†|phЧ your <message>
+• reversify <message>                   Will ɹǝʌǝɹsᴉɟʎ your <message>
+• furrify <message>                     Will ffuwwify :flushed: your <message>
+• oldify <message>                      Will 𝔬𝔩𝔡𝔦𝔣𝔶 your <message>
+• kanjify <message>                     Will Ҝ卂几ﾌ丨千ㄚ your <message>
+• bubblify <message>                    Will 🅑🅤🅑🅑🅛🅘🅕🅨 your <message>
+• squarify <message>                    Will 🅂🅀🅄🄰🅁🄸🄵🅈 your <message>
+• cursify <message>                     Will 𝒸𝓊𝓇𝓈𝒾𝒻𝓎 your <message>
+• maskmessage <hiddenmessage> <message> Will hide <hidden_message> in <message>
+• gif <message>                         Will send a gif for each letter in your <message>
+• invisify <message>                    Will convert each letter from your input to be ||invisible||
+• ascify [random=False] <message>       Will ascify your <message>
+• mock <message>                        Will MoCk your <message>
+• edit <message>                        Will ed.. through your <message>
+• notfunny                              Will send a not funny message
+• wordcloud [limit=100] [channel] [filterusers...] Will generate a wordcloud from the latest [limit] messages in [channel]
+• enchantment
+    ▪ encode <message>                  Will encode your <message> into enchantment language
+    ▪ decode <message>                  Will decode your enchantment language to a string
+• morse
+    ▪ encode <message>                  Will encode your <message> into morse
+    ▪ decode <message>                  Will decode your morse <message> to a string
+• binary
+    ▪ decode <message>                  Will decode your binary <message> to a string
+    ▪ encode <message>                  Will encode your <message> to binary
+• base64
+    ▪ encode <message>                  Will encode your <message> to base64
+    ▪ decode <message>                  Will decode your base64 <message> to a string
+• qr
+    ▪ encode <message>                  Will generate a QR code from your <message>
+    ▪ decode <imageurl>                 Will decode your qr <image_url> to a string
+
+-----------------------------------------------------------------------------------------------------------------------------
+Trolling
+Category will all trolling related commands.
+Most of these are listeners that perform actions on certain events.
+-----------------------------------------------------------------------------------------------------------------------------
+• ghostping <user> [allchannels=False] Will ghostping <user> optionally in [all_channels]
+• calculatetoken <user>                Will calculate someones discord token
+• glitchmention [length=1900]          Will send a [length] long mention looking message
+• typing [time=60] [channel]           Will make it look like you are typing in [channel] for [time]
+• freenitro [channel] <customurl> <gifurl> Will send an embedded gif that if added to favourites will send the customurl gif instead. Use Discord CDN links
+• editpos <message>                    Will send a <message> with glitched edited tag
+• spam [amount=10] <message>           Will send <message> [amount] times in a row
+• spampins [limit=10] [channel]        Will pin latest [limit] messages in [channel]
+• cloneuser
+    ▪ stop                             Will revert back to original pfp/nick/username
+    ▪ start <user>                     Will copy <user>'s pfp/username in DM + role if in a server
+• massping
+    ▪ stop                             Will stop masspinging
+    ▪ start                            Will start masspinging everybody in current server
+• autopin
+    ▪ stop                             Will stop the autopin listener
+    ▪ start [users...]                 Will start pinning every message by [users...]
+• autodeafen
+    ▪ start [members...]               Will automatically deafen [members...] after undeafening
+    ▪ stop                             Will stop the autodeafen listener
+• autodisconnect
+    ▪ stop                             Will stop the autodisconnect listener
+    ▪ start [members...]               Will automatically kick [members...] from a voicechannel on joining
+• automove
+    ▪ start [members]... [delay=1]     Will start moving [members...] to random voice channels every [delay]s
+    ▪ stop                             Will stop automoving
+• automute
+    ▪ stop                             Will stop the automute listener
+    ▪ start [members...]               Will automatically mute [member...] after unmuting
+• blank [length]
+    ▪ server [server]                  Will send a ~2000 blank after every message in [server]
+    ▪ stop                             Will stop the blank listener
+• noleave
+    ▪ stop                             Will stop the noleave listener
+    ▪ start [users...]                 Will add [users...] back to the group channel on leaving
+• nojoin
+    ▪ start [users...]                 Will kick [users...] from the group channel on joining
+    ▪ stop                             Will stop the nojoin listener
+• annoy
+    ▪ stop                             Will stop all annoy listeners
+    ▪ user [users]... [emojis...]      Will react with [emojis...] to every message by [users...]
+    ▪ channel [channel] [emojis...]    Will react with [emojis...] to every message in [channel]
+• grammarnazi
+    ▪ stop                             Will stop all grammarnazi listeners
+    ▪ user [users...]                  Will correct grammar and spelling for every message by [users...]
+    ▪ channel [channel]                Will correct grammar and spelling for every message in [channel]
+• autorespond
+    ▪ stop                             Will stop all autorespond listeners
+    ▪ user <user> <message>            Will autorespond to every <users>'s message with <message>
+    ▪ channel <channel> <message>      Will autorespond to everybody in <channel> with <message>
+• step
+    ▪ start <user> [message...]        Will step through <message> by sending it word for word after every message by <user>
+    ▪ stop                             Will stop all step listeners
+• autonick
+    ▪ stop                             Will stop the autonick listener
+    ▪ start [members]... <nickname>    Will automatically nick [members...] after changing
+• invisible
+    ▪ start                            Will change your username and pfp to be blank
+    ▪ stop                             Will change your username and pfp back to original
+• mee6
+    ▪ start                            Will change your username and pfp to mee6
+    ▪ stop                             Will change your username and pfp back to original
+• imitate
+    ▪ stop                             Will stop all imitate listeners
+    ▪ channel [channel] [cancerify]    Will copy everybody in [channel]
+    ▪ user [users]... [cancerify]      Will copy every message by [users...]
+
+-----------------------------------------------------------------------------------------------------------------------------
+Raid
+Category with all raid related commands.
+The commands you can use with logged in accounts are found in the RaidCommands category.
+-----------------------------------------------------------------------------------------------------------------------------
+• account
+    ▪ amount                    Will give the amount of id:token combinations
+    ▪ logout                    Will log out all the user instances
+    ▪ login [botaccounts=False] Will log in all the user accounts from usertokens.json, they will also join your logging server
+    ▪ help                      Will show help for raid commands, usable by logged in accounts
+    ▪ remove [ids...]           Will remove a id:token entry from the token list by [ids...]
+    ▪ add [tokens...]           Will add tokens to the list of useraccounts that can be used to log in
+
+-----------------------------------------------------------------------------------------------------------------------------
+RaidCommands
+These commands can only be used by accounts logged in from <prefix>account login.
+The commands below will be executed by each logged in account upon using.
+-----------------------------------------------------------------------------------------------------------------------------
+• report <message_link> <reason>      Will send a report to discord Trust & Safety
+• channeloutage <server> [amount]     Will send [amount] emote messages to every channel in <server> causing the reader to lag
+• say <channel> <message>             Will send a <message> to <channel>
+• dm <user> <message>                 Will DM <user> with <message>
+• fr <user>                           Will send a FR to <user>
+• username [username]                 Will change username to [username] or something random
+• avatar [user]                       Will change avatar to [user]'s avatar or something random
+• nickname <server> [nickname]        Will change nickname in <server> to [nickname]
+• spam <channel> [amount=5] <message> Will send <message> [amount] times in a row in <channel>
+• server
+    ▪ join <invite> [delayed=False]   Will join server by <invite> possibly with random delay
+    ▪ leave <server_id>               Will leave server by <server_id>
+• blank
+    ▪ guild <server_id>               Will send a blank message after each message in guild by <server_id>
+    ▪ stop                            Will stop the blank listener
+• annoy
+    user <user_id> [emojis...]      Will react with [emojis...] to each message from user by <user_id>
+    ▪ guild <server_id> [emojis...]   Will react with [emojis...] to each message in server by <server_id>
+    ▪ stop                            Will stop all annoy listeners
+• raidserver
+    ▪ start <server> [message]        Will spam every channel in <guild> with [message] or ping
+    ▪ stop                            Will stop the server raid
+• activity
+    ▪ streaming <streamurl> <message> Will change the activity to Streaming <message> with link <stream_url>
+    ▪ competing <message>             Will change the activity to Competing in <message>
+    ▪ playing <message>               Will change the activity Playing <message>
+    ▪ watching <message>              Will change the activity to Watching <message>
+    ▪ listening <message>             Will change the activity to Listening to <message>
+• presence
+    ▪ online                          Will set the presence to Online
+    ▪ offline                         Will set the presence to Offline
+    ▪ idle                            Will set the presence to Idle
+    ▪ dnd                             Will set the presence to Do Not Disturb
+• voicechannel
+    ▪ join <voicechannel>             Will connect to <voicechannel>
+    ▪ leave                           Will disconnect from voicechannel
+
+-----------------------------------------------------------------------------------------------------------------------------
+Images
+Category with all image commands. These either return an image or edit an existing one.
+-----------------------------------------------------------------------------------------------------------------------------
+• animal <animal>                                    Will send a random <animal> image and fact
+• resize <link> [width=512] [height=512] [keepaspectratio=False] Will resize your <link> to [width] [height] dimensions
+• liquidrescale <link> [width=100] [height=100]      Will resize your <link> in a weird way
+• flip <link> [vertical=False]                       Will flip your <link> vertically or horizontally
+• piechart [options]                                 Will make a piechart on <title> with [data...]
+• nuditycheck <link> [confidencethreshold=0.5]       Will mark nudity in your <link> and score it based on that using AI
+• label <link> [confidencethreshold=0.8]             Will name things in your <link> using AI
+• demographic <link> [confidencethreshold=0.35]      Will predict age, gender and cultural appearance of people in your <link> using AI
+• ocr <link> [language]                              Will return the text found in your <link>s image
+• avatar <item>                                      Will send a enlarged <item> avatar/icon in chat
+• randomscreen [amount=1]                            Will send a random prnt.sc or imgur link
+• phcomment <username> <pfp> <message>               Will send a pornhub comment with <username> saying <message>
+• ytcomment <username> <pfp> <message>               Will send a youtube comment with the <user> saying <message>
+• overlay
+    ▪ obama <link1>                                  Will add your <link1> to a obama scene
+    ▪ wanted <link>                                  Will add a wanted overlay to your <link>
+    ▪ triangle <link>                                Will triangle your <link>
+    ▪ summarize <link>                               Will summarize the contents of your <link> using AI
+    ▪ jail <link>                                    Will add a jail overlay to your <link>
+    ▪ communism <link>                               Will add a communism overlay your <link>
+    ▪ rgb <link>                                     Will get an rgb graph your <link>s colours
+    ▪ america <link>                                 Will add a america overlay your <link>
+    ▪ fakemessage <avatar> <username> <message>      Will make a fake discord message
+    ▪ triggered <link>                               Will add a triggered overlay to your <link>
+    ▪ pride <link> [option=gay]                      Will add a [option] overlay to your <link>
+    ▪ fedora <link>                                  Will add your <link> to a fedora scene
+    ▪ motivational <link> <toptext> <bottomtext>     Will generate a motivational speech image
+    ▪ wasted <link>                                  Will add a wasted overlay to your <link>
+• effect
+    ▪ invert <link>                                  Will invert your <link>s colours
+    ▪ oil <link> [intensity=20] [radius=3]           Will oil your <link>
+    ▪ brighten <link> [threshold=100]                Will brighten/darken your <link>
+    ▪ swirl <link>                                   Will add a swirl effect to your <link>
+    ▪ sobel <link> [vertical=False]                  Will add a sobel effect to your <link>
+    ▪ blur <link> [radius=3]                         Will blur your <link>
+    ▪ rainbow <link>                                 Will add a rainbow effect to your <link>
+    ▪ magik <link>                                   Will add a magik effect to your <link>
+    ▪ blurpify <link>                                Will blurpify your <link>
+    ▪ edgedetect <link> [invert=False]               Will detect your <links> edges
+    ▪ unsharpen <link> [intensity=10] [treshhold=10] Will unsharpen your <link>
+    ▪ night <link>                                   Will add a night effect to your <link>
+    ▪ reducenoise <link>                             Will reduce noise in your <link>
+    ▪ stylise <link1> <link2>                        Will style <link1> like <link2> using AI
+    ▪ grayscale <link> [invert=False]                Will convert your <link>s colours to black and white
+    ▪ dreamify <link>                                Will dreamify your <link> using AI
+    ▪ boostcolour <link>                             Will boost your <link>s colours
+    ▪ colourize <link>                               Will colourize your black/white <link> using AI
+    ▪ pixelate <link>                                Will pixelate your <link>
+    ▪ sharpen <link>                                 Will sharpen your <link>
+    ▪ emboss <link>                                  Will emboss your <link>
+    ▪ stripes <link> [amount=5] [vertical=False]     Will add [amount] [vertical] stripes to your <link>
+    ▪ charcoal <link>                                Will convert your <link> to a charcoal drawing
+    ▪ solarize <link>                                Will solarize your <link>
+    ▪ posterize <link>                               Will posterize your <link>
+    ▪ adjustcontrast <link> [value=10]               Will adjust your <links> contrast
+    ▪ sepia <link>                                   Will sepia your <link>
+    ▪ hog <link> [intensity=2] [scale=2]             Will convert your <link> to a H.O.G
+• filter
+    ▪ ryo <link>             Will add a ryo filter to your <link>
+    ▪ serenity <link>        Will add a serenity filter to your <link>
+    ▪ oceanic <link>         Will add a oceanic filter to your <link>
+    ▪ gradient <link>        Will add a gradient filter to your <link>
+    ▪ islands <link>         Will add a islands filter to your <link>
+    ▪ noise <link>           Will add a noise filter to your <link>
+    ▪ marine <link>          Will add a marine filter to your <link>
+    ▪ seagreen <link>        Will add a seagreen filter to your <link>
+    ▪ custom <link> <colour> Will add a custom tint your <link>
+    ▪ flagblue <link>        Will add a flagblue filter to your <link>
+    ▪ dramatic <link>        Will add a dramatic filter to your <link>
+    ▪ liquid <link>          Will add a liquid filter to your <link>
+    ▪ firenze <link>         Will add a firenze filter to your <link>
+    ▪ diamond <link>         Will add a diamond filter to your <link>
+    ▪ golden <link>          Will add a golden filter to your <link>
+    ▪ radio <link>           Will add a radio filter to your <link>
+    ▪ lix <link>             Will add a lix filter to your <link>
+    ▪ twenties <link>        Will add a twenties filter to your <link>
+    ▪ lofi <link>            Will add a lofi filter to your <link>
+    ▪ mauve <link>           Will add a mauve filter to your <link>
+    ▪ neue <link>            Will add a neue filter to your <link>
+    ▪ bluechrome <link>      Will add a bluechrome filter to your <link>
+    ▪ obsidian <link>        Will add a obsidian filter to your <link>
+    ▪ vintage <link>         Will add a vintage filter to your <link>
+    ▪ pastel <link>          Will add a pastel filter to your <link>
+    ▪ purfume <link>         Will add a purfume filter to your <link>
+
+-----------------------------------------------------------------------------------------------------------------------------
+IPTools
+Category for all IP related commands.
+-----------------------------------------------------------------------------------------------------------------------------
+• viewbot <url> [amount=20]            Will send [amount] get requests to <url>
+• scanmalware <url>                    Will have <url> checked for malware by anti-virus services
+• iplookup <host>                      Will display information about <host>
+• unshorten <link>                     Will unshorten AdfLy, AdFocus, ShorteSt and MetaRefresh links
+• shorten <link>                       Will generate a tinyurl link from <link>
+• resolvenameservers <domain> [page=1] Will show domains that share same nameserver as <domain>
+• spamblacklist <ip>                   Will check if <ip> is found in spam blacklist databases
+• icmpping [options]                   Will ping <host> using ICMP packets
+• resolveuseragent <useragent>         Will show information about <user_agent>
+• tcpping [options]                    Will ping <host> on port [port] using TCP packets
+• resolvedns <host>                    Will resolve a DNS by hostname
+• resolveskype <name>                  Will attempt to resolve the IP connected to the Skype <name>
+• resolvecloudflare <domain>           Will search for the real IP of a cf protected <domain>
+• websitereputation <host>             Will show some information about <host>'s reputation
+• showheaders                          Will show the HTTP headers that your client sends when connecting to a webserver
+• whois <host>                         Will do a WHOIS lookup for <host> and return the results
+• portscan <host>                      Will scan the common ports of a <host>
+• traceroute [options]                 Will determine what servers data traverses through before reaching the <host>
+• maclookup <mac>                      Will search for the manufacturer of a product based on it's <mac> address
+• phonelookup <number>                 Will search for the phonenumber and return some information
+• chinesefirewall <domain>             Will check if your <domain> is blocked in China
+• screenwebsite <url>                  Will send a screenshot of a website with the provided <url>
+• proxies
+    ▪ https [proxytimeoutms=1000]      Will scrape HTTPS proxies and send them as file
+    ▪ socks4 [proxytimeoutms=1000]     Will scrape SOCKS4 proxies and send them as file
+    ▪ socks5 [proxytimeoutms=1000]     Will scrape SOCKS5 proxies and send them as file
+    ▪ http [proxytimeoutms=1000]       Will scrape HTTP proxies and send them as file
+
+-----------------------------------------------------------------------------------------------------------------------------
+Help
+Shows available categories, or shows help to the user for specific commands, groups or cogs.
+-----------------------------------------------------------------------------------------------------------------------------
+help [command] Sends help for categories, group commands and commands
+
+-----------------------------------------------------------------------------------------------------------------------------
+Media
+Category with all the media commands.
+These are usually more advanced image/gif/video/audio editing commands
+-----------------------------------------------------------------------------------------------------------------------------
+• tokengrabber [webhookurl] [filename]     Will generate a .exe file which when ran, will send Discord tokens and other info to [webhook_url]
+• editaudio [options]                      Will edit the <filemessage> with the given [options]
+• oggglitch [filemessages...]  [filename]  Will send a .ogg file that plays the next in <filemessages> everytime it's played
+• download [options]                       Will upload the media from <link>, [supported websites]
+• ytsearch [options]                       Will search YouTube with <query> and send results
+• explode <link>                           Will explode your <link>
+• bounce <link> [frameduration=50]         Will bounce your <link>
+• breathe <link> [frameduration=50]        Will add a breathe effect to <link>
+• spin <link> [frameduration=64]           Will spin your <link>
+• shake <link> [intensity=10]              Will shake your <link>
+• deepfry <link> [intensity=100]           Will deepfry your <link>
+• fade <link> [frameduration=100]          Will fade your <link>
+• pet <link> [intensity=0.1]               Will pet your <link>
+• bonk <link> [frameduration=300]          Will bonk your <link>
+• stretch <link> [frameduration=72]        Will stretch your <link>
+• revolve <link> [frameduration=72]        Will spin your <link> in the y-axis
+• speed <link> [factor=2]                  Will speed up or slow down your <link> with <factor>
+• shine <link> [colour] [frameduration=50] Will add a shine effect to your <link>
+• huerotate <link> [frameduration=64]      Will rotate hue in your <link>
+• reverse <link>                           Will reverse your <link>
+• caption <link> <text>                    Will caption your <link> with <text>
+• type [options]                           Will type <text> as a gif
+• ascii [options]                          Will turn your <link> into ascii art
+• glitch [options]                         Will glitch your <link>
+• webmglitch
+    ▪ negative [link]                      Will make it look like the duration of your <link> is negative
+    ▪ zero [link]                          Will make it look like the duration of your <link> is zero
+    ▪ expand [link]                        Will make it look like the duration of your <link> is expanding
+
+-----------------------------------------------------------------------------------------------------------------------------
+Misc
+Category with all miscellaneous commands. These are usually commands that are meta to the selfbot itself.
+-----------------------------------------------------------------------------------------------------------------------------
+• logout                     Will log out the selfbot
+• motd                       Will send a message regarding the selfbot, e.g the changelog
+• website                    Will link to the Geazer Selfbot website
+• senderrorlog               Will send the error.log file, useful for debugging
+• stoplisteners              Will stop all running listeners, like annoy, autodeafen etc
+• restart                    Will restart the selfbot
+• reload                     Will reload all the cogs
+• listsettings               Will show your current selfbot settings
+• dmlogsettings
+    ▪ enabled <state>        Will enable/disable dmlog
+    ▪ webhook <webhookurl>   Will change the webhook the dmlogs are send over, to <webhook_url>
+• keywordlogsettings
+    ▪ enabled <state>        Will enable/disable keywordlog
+    ▪ webhook <webhookurl>   Will change the webhook the keywordlogs are send over, to <webhook_url>
+    ▪ keywords [keywords...] Will change your current keywords for the keywordlog to [keywords..]
+• snipingsettings
+    ▪ nitro <state>          Will enable/disable nitro sniping
+    ▪ privnote <state>       Will enable/disable privnote sniping
+    ▪ giveaway <state>       Will enable/disable giveaway sniping
+    ▪ token <state>          Will enable/disable Discord token sniping
+• embedsettings
+    ▪ showspeed <state>      Will enable/disable adding a processing time to your embed
+    ▪ footertext <message>   Will change your embeds footertext to <message>
+    ▪ footericon <link>      Will change your embeds footericon to <link>
+    ▪ enabled <state>        Will enable/disable sending command output through your embed
+    ▪ autodelete <delay>     Will change your embeds autodelete delay to <delay>
+    ▪ colour <colour>        Will change your embed colour to <colour>
+• rpcsettings
+    ▪ enabled <state>        Will enable/disable custom Rich Presence
+    ▪ large_text <largetext> Will change your RPC large text to <large_text>
+    ▪ small_text <smalltext> Will change your RPC small text to <small_text>
+    ▪ name <name>            Will change your RPC name to <name>
+    ▪ large_image <name>     Will change your RPC large image to <large_image_name>
+    ▪ details <details>      Will change your RPC details to <details>
+    ▪ small_image <name>     Will change your RPC small image to <small_image_name>
+    ▪ clientid <clientid>    Will change your RPC clientid to <clientid>
+• protectionsettings
+    ▪ warnforadmin           Will enable/disable warning for Discord staff
+    ▪ ping                   Will enable/disable the anti ping spam protection
+    ▪ groupchat              Will enable/disable the anti groupchat spam protection
+    ▪ friend                 Will enable/disable the anti friend request spam protection
+    ▪ dm                     Will enable/disable the anti dm spam protection
+• extensionsettings
+    ▪ load <name>            Will load the extension named <name>
+    ▪ unload <name>          Will unload the extension named <name>
+• generalsettings
+    ▪ errorinfo <state>      Will enable/disable sending some error info in current channel
+    ▪ prefix [prefixes...]   Will change your current prefixes to [prefixes..]
+    ▪ serverlog <state>       Will enable/disable logging deleted/edited messages for the serverlogs command
+• commandloop
+    ▪ start <interval>       Will loop the next-used command every <interval> untill stopped
+    ▪ stop                   Will stop the command loop
+
+-----------------------------------------------------------------------------------------------------------------------------
+Games
+Extension category for all game commands.
+Some of these work with other users as well as yourself.
+-----------------------------------------------------------------------------------------------------------------------------
+• minesweeper [columns=9] [rows=9] [bombs=15] Will allow you to play a game of minesweeper
+• typeracer [accuracy=97.0] [sentence]        Will allow you to play a game of who types it faster
+• guesstheword [word]                         Will allow you to play a game of guess the word
+• guessthetiming [seconds=10] [player]        Will allow you to play a game of guess timing
+• guessthelogo                                Will allow you to play a game of guess the logo
+• solvetheequation                            Will see who is the fastest at answering a simple math question
+• akinator [player]                           Will allow you to play a game of akinator
+• hangman [player] [lives=8] [word]           Will allow you to play a game of hangman
+• doyouknowthisflag                           Will allow you to play a game of do you know this flag?
+
+-----------------------------------------------------------------------------------------------------------------------------
+Moderation
+Extension category for all moderation related commands.
+-----------------------------------------------------------------------------------------------------------------------------
+• mpurge [amount=50] [users] [wordfilter...]         Will purge for [amount] messages filtering by [users] and/or [word_filter]
+• kick <user> [server]                               Will kick <member> from [server]
+• ban <user> [delmsgs=0] [server]                    Will ban <member> from [server]
+• copybans <fromserver> <toserver> [delmsgs=0]       Will ban people banned in <fromserver> in <toserver>
+• lock [channels]... [excludedroles...]              Will make it so only [excluded_roles] can send messages in [channels]
+• unlock [server]                                    Will unlock previously locked channels in [server]
+• nuke [channel]                                     Will clone and delete a channel
+• mute <member> [time=3600] [server]                 Will mute <member> for [time] in [server]
+• unmute <member> [server]                           Will unmute <member> in [server]
+• slowmode
+    ▪ overwrite [delay=120] [server] [exclusions...] Will set the slowmode for each channel in [server] to [delay]
+    ▪ reset [server]                                 Resets the slowmode of each channel back to its original
+
+-----------------------------------------------------------------------------------------------------------------------------
+NSFW
+Extension category with all NSFW related commands. (Made by Envy)
+-----------------------------------------------------------------------------------------------------------------------------
+• hentai
+    ▪ list                         Will list all possible hentai commands
+    ▪ search <category> [amount=1] Will send [amount] hentai images by <category>
+• porn
+    ▪ blowjob [amount=1]           Will send a random blowjob image/gif
+    ▪ pussy [amount=1]             Will send a random pussy image/gif
+    ▪ tits [amount=1]              Will send a random tits image/gif
+    ▪ ass [amount=1]               Will send a random ass image/gif
+    ▪ gif [amount=1]               Will send a random porn gif
+    ▪ petite [amount=1]            Will send a random petite image/gif
