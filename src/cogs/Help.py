@@ -26,24 +26,14 @@ class HelpCommand(commands.HelpCommand):
 
     async def _send_message(self, title: str, description: str, image: str = None):
         '''Makes sure that when user invokes another help command, the original one is edited and the auto delete time is reset'''
-        ctx, content = self.context, None
-        embed = ctx.bot.default_embed(
-            title=title,
-            description=description,
-            url='https://geazersb.github.io',
-        )
-        embed.set_thumbnail(url=ctx.bot.ICON)
-        embed.set_image(url=f'https://geazersb.github.io/help_gifs/{image}.gif' if image else f'https://singlecolorimage.com/get/{str(embed.colour)[1:]}/400x4')
-
-        me = ctx.guild.me if ctx.guild else ctx.bot.user
-        if not ctx.channel.permissions_for(me).embed_links and ctx.guild:
-            content = f"```\n{utils.remove_markdown(embed.description)}\n```"
+        ctx = self.context
+        content = f"```\n{utils.remove_markdown(description)}\n```"
 
         try:
-            await ctx.bot.HELP_MESSAGE.edit(embed=embed, content=content)
+            await ctx.bot.HELP_MESSAGE.edit(content=content)
             ctx.bot.HELP_TASK.cancel()
         except:
-            ctx.bot.HELP_MESSAGE = await ctx.send(embed=embed, content=content)
+            ctx.bot.HELP_MESSAGE = await ctx.send(content=content)
 
         ctx.bot.HELP_TASK = asyncio.ensure_future(
             asyncio.sleep(
